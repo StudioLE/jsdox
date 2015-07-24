@@ -14,6 +14,12 @@ Documentation is available at [jsdox.org](http://jsdox.org).
 npm install -g jsdox
 ```
 
+Or to install from the StudioLE fork
+
+```
+npm install -g https://github.com/StudioLE/jsdox/archive/master.tar.gz
+```
+
 ## Usage
 
 ```
