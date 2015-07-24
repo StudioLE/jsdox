@@ -1,53 +1,47 @@
 {{#modules}}
 {{#name}}
-# {{name}}
+## {{name}}
 {{/name}}
+{{#description}}
 
-{{#description}}{{{description}}}{{/description}}
-
+{{{description}}}
+{{/description}}
 {{#hasRequires}}
-**Requires:**
+
+### Requires
 
 {{#requires}}
 + {{{req}}}
 {{/requires}}
 {{/hasRequires}}
-
 {{#hasMembers}}
-**Members:**
+
+### Members
 
 {{#members}}
-+ {{{member}}}
+{{> member}}
 {{/members}}
-{{/hasMembers}}
 
+{{/hasMembers}}
 {{#examples}}
-**Example:**
+
+### Example
+
 ```js
 {{{examples}}}
 ```
 
 {{/examples}}
-* * *
-
 {{#functions}}
 {{> function}}
-
 {{/functions}}
 {{#classes}}
+
 {{> class}}
-
 {{/classes}}
-
 {{/modules}}
-* * *
-
-{{#copyright}}*{{copyright}}*{{/copyright}}
-
-{{#author}}**Author:** {{author}}{{/author}}
-
-{{#license}}**License:** {{license}} {{/license}}
-
-{{#overview}}**Overview:** {{{overview}}}{{/overview}}
-
-{{#version}}**Version:** {{version}}{{/version}}
+{{#copyright}}{{copyright}}{{/copyright}}
+{{#author}}Author: {{author}}{{/author}}
+{{#license}}License: {{license}} {{/license}}
+{{#overview}}Overview: {{{overview}}}{{/overview}}
+{{#version}}Version: {{version}}{{/version}}

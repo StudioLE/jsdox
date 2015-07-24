@@ -1,33 +1,38 @@
-### {{#moduleName}}{{moduleName}}.{{/moduleName}}{{#className}}{{className}}.{{/className}}{{name}}({{#paramsString}}{{paramsString}}{{/paramsString}}) {{#version}}{{version}}{{/version}}
-
+### {{#moduleName}}{{moduleName}}.{{/moduleName}}{{#className}}{{className}}.{{/className}}{{name}}({{#paramsString}}{{paramsString}}{{/paramsString}}){{#version}} {{version}}{{/version}}
 {{#description}}
-{{{description}}}
 
+{{{description}}}
 {{/description}}
 {{#deprecated}}
-Deprecated: {{{deprecated}}}
 
+Deprecated: {{{deprecated}}}
 {{/deprecated}}
 {{#hasParams}}
-**Parameters**
+
+#### Arguments
 
 {{/hasParams}}
 {{#params}}
-**{{name}}**: {{#typesString}}`{{typesString}}`{{/typesString}}{{#description}}, {{{description}}}{{/description}}
-
+{{> member}}
 {{/params}}
 {{#fires}}
-**Fires**: {{.}}
 
+#### Fires
+
+{{.}}
 {{/fires}}
 {{#returns}}
-**Returns**: {{#typesString}}`{{typesString}}`{{/typesString}}{{#description}}, {{{description}}}{{/description}}
+
+#### Returns
+
+{{> member}}
 {{/returns}}
 
 {{#examples}}
-**Example**:
+
+#### Example
+
 ```js
 {{{examples}}}
 ```
-
 {{/examples}}
